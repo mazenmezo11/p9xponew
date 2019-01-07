@@ -101,7 +101,7 @@ const developers = ['399697177259147275'];
 console.log("itzZa1D");
 
 client.on('ready', () => {
-    console.log(`Logged as ${client.user.tag}By : zaid`)
+    console.log(`Logged as ${client.user.tag}By : Omar M. El-Sisy`)
 })
 
 client.on('message', message => {
@@ -140,5 +140,4 @@ if (message.content.startsWith(adminprefix + 'avatar')) {
 
 
 
-client.login(process.env.zezo);
-
+client.login(process.env.BOT_TOKEN);
