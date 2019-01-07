@@ -152,4 +152,4 @@ omar.reply("`تم حذف جميع الرتب بنجاح`")
 
 
 
-client.login(process.env.TK_TOKEN);
+client.login(process.env.BOT_TOKEN);
