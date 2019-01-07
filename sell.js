@@ -341,4 +341,4 @@ if (message.content.startsWith(adminprefix + 'avatar')) {
 });
 
 
-client.login(process.env.sell);  
+client.login(process.env.BOT_TOKEN);
