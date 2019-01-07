@@ -97,4 +97,4 @@ hours = 12;
   }
 });
 
-client.login(process.env.GA_TOKEN);
+client.login(process.env.BOT_TOKEN);
