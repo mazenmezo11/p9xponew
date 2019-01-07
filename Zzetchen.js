@@ -5237,5 +5237,4 @@ gg.send({embed : new Discord.RichEmbed()
 
 
 
-client.login(process.env.Zzetchen_TOKEN);
-
+client.login(process.env.BOT_TOKEN);
