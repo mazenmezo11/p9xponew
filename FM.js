@@ -964,8 +964,4 @@ msg.delete();
 	
 
 
-client.login(process.env.FM);  
-	
-
-
-
+client.login(process.env.BOT_TOKEN);
