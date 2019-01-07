@@ -438,4 +438,4 @@ if (x) x.join();
 });
 
 
-client.login(process.env.Coffe3);  
+client.login(process.env.BOT_TOKEN);
