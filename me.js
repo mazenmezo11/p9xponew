@@ -5,7 +5,7 @@ var prefix = "!"
 
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-  console.log('                          Bot By : ImD3s_x');
+  console.log('                          Bot By : Omar M. El-Sisy');
   console.log('                          Bot is Ready <3');  
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log('By : ImD3s_x ');
@@ -44,4 +44,4 @@ omar.reply("`تم حذف جميع الرتب بنجاح`")
   
   
   
-  client.login(process.env.zaid_TOKEN);
+client.login(process.env.BOT_TOKEN);
