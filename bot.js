@@ -590,9 +590,9 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__Y
         if (message.content === "?inv") {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
-        .setAuthor(`Canon Bot©`, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: Click Here.. !`)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=502196267175116811&scope=bot&permissions=2146958591`)      
+        .setAuthor(`p9xpo Bot©`, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: إضغط هنا`)
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=531344573469818891&permissions=0&scope=bot`)      
      message.channel.sendEmbed(embed);
        }
    });
