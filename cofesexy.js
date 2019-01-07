@@ -948,8 +948,7 @@ msg.delete();
 	
 
 
-client.login(process.env.Coffe);  
-	
+client.login(process.env.BOT_TOKEN);
 
 
 
