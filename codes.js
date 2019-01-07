@@ -1434,4 +1434,4 @@ Accepted. [:white_check_mark:]**`);
 
 
 
-client.login(process.env.OBX_CODES);
+client.login(process.env.BOT_TOKEN);
