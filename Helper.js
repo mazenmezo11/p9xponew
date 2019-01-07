@@ -374,4 +374,4 @@ msg.delete();
 	
 
 
-client.login(process.env.Helper);
+client.login(process.env.BOT_TOKEN);
