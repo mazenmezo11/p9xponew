@@ -434,4 +434,4 @@ message.channel.send({embed:embed});
 
 
 
-client.login(process.env.OBX);
+client.login(process.env.BOT_TOKEN);
