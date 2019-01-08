@@ -1091,6 +1091,14 @@ client.on('message', message => {
         channel.send({embed : embed});
         }) 
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
+client.on('message', msg => {
+  if (msg.content === 'السلام عليكم') {
+    msg.reply('وعليكم السلام منور السيرفر♥');
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
