@@ -697,7 +697,7 @@ m.sendMessage(args)
 client.on('message',async msg => {
      if(msg.channel.type === "old") return;
   if(msg.author.bot) return;
-  var p = "?";
+  var p = "-";
   if(msg.content.startsWith(p + "setstats")) {
   if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('? **لا معك رتبه**');
   if(!msg.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS'])) return msg.reply('? **البوت لا يمتلك صلاحية**');
@@ -837,7 +837,7 @@ client.on('message', message => {
 if(!message.channel.guild) return
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.startsWith( '?' + 'bc')) {
+if(message.content.startsWith( '-' + 'bc')) {
         message.guild.members.forEach(member => {
    if(!message.member.hasPermission('ADMINISTRATOR')) return;
             member.send(`${args}\n ${member}`);
