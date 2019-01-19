@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
-const prefix = "-";
+const prefix = "?";
 const Canvas = require('canvas');
 const moment = require('moment');
        
@@ -272,7 +272,7 @@ __Member No.__ : ${member.guild.memberCount} :herb:
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Servers`,' Canon Bot™ ',' ?help| ?support',`${client.users.size} Members`,'-invite | -inv ','By: itzZa1D !!'];
+    var setGame = [`${client.guilds.size} Servers`,' Canon Bot™ ',' -help| -support',`${client.users.size} Members`,'-invite | -inv ','By: itzZa1D !!'];
     var i = -1;
     var j = 0;
     setInterval(function (){
