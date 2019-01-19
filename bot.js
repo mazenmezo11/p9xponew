@@ -272,7 +272,7 @@ __Member No.__ : ${member.guild.memberCount} :herb:
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Servers`,' Canon Bot™ ',' ?help| ?support',`${client.users.size} Members`,'?invite | ?inv ','By: itzZa1D !!'];
+    var setGame = [`${client.guilds.size} Servers`,' Canon Bot™ ',' ?help| ?support',`${client.users.size} Members`,'-invite | -inv ','By: itzZa1D !!'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -295,7 +295,7 @@ client.on('ready', function(){
 /// invite / inv ..
 
 //client.on("message", message => {
-// if (message.content === "?invite") {
+// if (message.content === "-invite") {
 //  const embed = new Discord.RichEmbed()
 //      .setColor("RANDOM")
 //      .setFooter('© Canon Bot :heart: 2018-2019 ')
@@ -310,7 +310,7 @@ client.on('ready', function(){
 /// Ban 
 
 client.on('message', message => {
-const prefix = "?";
+const prefix = "-";
   if (message.author.zaid) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -341,7 +341,7 @@ message.channel.send(`**:white_check_mark: ${user.tag} banned from the server ! 
 /// Kick
 
 client.on('message', message => {
-const prefix = "?";
+const prefix = "-";
   if (message.author.zaid) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -556,7 +556,7 @@ client.on('message', message => {
 	
 client.on('message', message => {
 
-    if(message.content === prefix + "?mc") {
+    if(message.content === prefix + "-mc") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__You dont have Permission__**');
@@ -569,7 +569,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__
              }
 
 			 /// umc
- if(message.content === prefix + "?umc") {
+ if(message.content === prefix + "-umc") {
                      if(!message.channel.guild) return message.reply('** This command only for servers**');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__You dont have Permission__**');
@@ -587,7 +587,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__Y
 
 
       client.on('message', message => {
-        if (message.content === "?inv") {
+        if (message.content === "-inv") {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
         .setAuthor(`p9xpo Bot©`, message.author.avatarURL)      
@@ -599,7 +599,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__Y
    
    
       client.on('message', message => {
-        if (message.content === "?invite") {
+        if (message.content === "-invite") {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
         .setAuthor(`Canon Bot©`, message.author.avatarURL)      
@@ -613,7 +613,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__Y
  /// ping  
    
  client.on('message', message => {
-     if (message.content === "?ping") {
+     if (message.content === "-ping") {
       const embed = new Discord.RichEmbed()
  
   .setColor("#FF0000")
@@ -626,7 +626,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__Y
 /// avatar
 
 client.on('message', message => {
-    if (message.content.startsWith("?avatar")) {
+    if (message.content.startsWith("-avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -682,8 +682,8 @@ client.on('message', message => {
 
 client.on('message', message => {
 const args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('?bcall')){
- if(!message.author.id === '399697177259147275') return;
+if (message.content.startsWith('-bcall')){
+ if(!message.author.id === '531344573469818891') return;
 message.channel.sendMessage(':white_check_mark: Sending The BC')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -913,49 +913,49 @@ client.channels.get("530319273826975744").sendEmbed(embed)
 /// support   
   
 client.on('message', msg => {
-  if(msg.content === '?support')
+  if(msg.content === '-support')
   msg.channel.send(':gear: Server Support :gear:')
 });
 
 client.on('message', msg => {
-  if(msg.content === '?support')
-  msg.channel.send('https://discord.gg/rWrtX6X')
+  if(msg.content === '-support')
+  msg.channel.send('https://discord.gg/GDfHAS')
 });
 
 
    client.on('message', message => {
-     if (message.content === "?help") {
+     if (message.content === "-help") {
 message.author.send(`
 **.                             ● ▬▬▬▬▬▬▬▬▬ __General__ ▬▬▬▬▬▬▬▬▬ ●
 
-「✵」?count | عرض عدد أعضاء السيرفر
-「✵」?ping | عرض سرعه البوت
-「✵」?avatar | عرض صورتك أو صوره أي احد تمنشنه
-「✵」?image | لعرض صوره السيرفر
-「✵」?server | معلومات عن السيرفر
-「✵」?help | عرض هذه القائمه
-「✵」?bot | معلومات عن البوت
+「✵」-count | عرض عدد أعضاء السيرفر
+「✵」-ping | عرض سرعه البوت
+「✵」-avatar | عرض صورتك أو صوره أي احد تمنشنه
+「✵」-image | لعرض صوره السيرفر
+「✵」-server | معلومات عن السيرفر
+「✵」-help | عرض هذه القائمه
+「✵」-bot | معلومات عن البوت
 
                               ● ▬▬▬▬▬▬▬▬▬ __Staff__ ▬▬▬▬▬▬▬▬▬ ●
 
-「✵」?ban | حظر شخص من السيرفر
-「✵」?kick | طرد أحد من أعضاء السيرفر
-「✵」?mute | إسكات شخص من أعضاء السيرفر
-「✵」?unmute | رفع الإسكات عن العضو
-「✵」?banlist | عرض عدد الناس المحظوره من السيرفر
-「✵」?mc | تقفيل الشات
-「✵」?umc | فتح الشات
-「✵」?hide | إخفاء الروم
-「✵」?show | إظهار الروم
-「✵」?setstats | (إنشاء 3 رومات بمعلومات عن (التاريخ , الوقت , عدد الناس الموجوده في الروم الصوتي
-「✵」?bc | رساله جماعيه لكل الناس في السيرفر
-「✵」?clear | مسح الشات
-「✵」?nickall | إعطاء جميع الناس في السيرفر إسم مستعار
+「✵」-ban | حظر شخص من السيرفر
+「✵」-kick | طرد أحد من أعضاء السيرفر
+「✵」-mute | إسكات شخص من أعضاء السيرفر
+「✵」-unmute | رفع الإسكات عن العضو
+「✵」-banlist | عرض عدد الناس المحظوره من السيرفر
+「✵」-mc | تقفيل الشات
+「✵」-umc | فتح الشات
+「✵」-hide | إخفاء الروم
+「✵」-show | إظهار الروم
+「✵」-setstats | (إنشاء 3 رومات بمعلومات عن (التاريخ , الوقت , عدد الناس الموجوده في الروم الصوتي
+「✵」-bc | رساله جماعيه لكل الناس في السيرفر
+「✵」-clear | مسح الشات
+「✵」-nickall | إعطاء جميع الناس في السيرفر إسم مستعار
 
                               ● ▬▬▬▬▬▬▬▬▬ __Information__ ▬▬▬▬▬▬▬▬▬ ●
 
-「✵」?support | عرض سيرفر السبورت في حاله مواجهة اي مشكله
-「✵」?inv / invite | لدعوه البوت**
+「✵」-support | عرض سيرفر السبورت في حاله مواجهة اي مشكله
+「✵」-inv / invite | لدعوه البوت**
 `);
     }
 });
@@ -987,7 +987,7 @@ client.on("message", message => {//Toxic Codes
 
 
 client.on('message', message => {
-    if (message.content === ('?bot')) {
+    if (message.content === ('-bot')) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
