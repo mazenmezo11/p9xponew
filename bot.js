@@ -1099,6 +1099,7 @@ client.on('message', msg => {
     msg.reply('وعليكم السلام منور السيرفر♥');
   }
 });
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
           client.user.setActivity("Rainbow , r#help .",{type: 'WATCHING'});
