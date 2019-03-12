@@ -914,11 +914,11 @@ client.channels.get("530319273826975744").sendEmbed(embed)
   
 client.on('message', msg => {
   if(msg.content === '?support')
-  msg.channel.send(':gear: Server Support :gear:')
+  msg.channel.send('https://discord.gg/4SYwGd')
 });
 
 client.on('message', msg => {
-  if(msg.content === '-?support')
+  if(msg.content === '?support')
   msg.channel.send('https://discord.gg/4SYwGd')
 
 
