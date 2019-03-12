@@ -569,7 +569,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__
              }
 
 			 /// umc
- if(message.content === prefix + "-umc") {
+ if(message.content === prefix + "umc") {
                      if(!message.channel.guild) return message.reply('** This command only for servers**');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__You dont have Permission__**');
@@ -599,7 +599,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__Y
    
    
       client.on('message', message => {
-        if (message.content === "-invite") {
+        if (message.content === "?invite") {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
         .setAuthor(`Canon Bot©`, message.author.avatarURL)      
@@ -837,7 +837,7 @@ client.on('message', message => {
 if(!message.channel.guild) return
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.startsWith( '?' + 'bc')) {
+if(message.content.startsWith( 'prefix' + 'bc')) {
         message.guild.members.forEach(member => {
    if(!message.member.hasPermission('ADMINISTRATOR')) return;
             member.send(`${args}\n ${member}`);
@@ -919,8 +919,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if(msg.content === '-?support')
-  msg.channel.send('https://discord.gg/GDfHAS')
-});
+  msg.channel.send('https://discord.gg/4SYwGd')
 
 
    client.on('message', message => {
