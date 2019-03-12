@@ -1172,4 +1172,5 @@ The steps of the role did not worked .!!
 		   message.author.send({embed})
 	   }
    });
+
 client.login(process.env.BOT_TOKEN);
