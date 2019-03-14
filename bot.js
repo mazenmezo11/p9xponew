@@ -1102,8 +1102,16 @@ client.on('message', msg => {
 
 
   
-
-
+client.on('channelCreate', channel => {
+    var embed = new Discord.RichEmbed()
+.setColor('RED')
+.setTitle('New Channel')
+.setDescription(Channel Type : ${channel.type}
+Channel Name : <#${channel.id}>
+Created At  : ${channel.createdAt}
+Channel ID : ${channel.id})
+client.channels.get('555833541812813844').send(embed)
+});
 
 
 
