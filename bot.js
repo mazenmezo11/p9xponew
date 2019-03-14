@@ -1115,14 +1115,14 @@ client.channels.get('555833541812813844').send(embed)
 
 
 
-client.on('guildMemberRemove', member => {
-    var embed = new Discord.RichEmbed()
-.setColor('RED')
-.setTitle('Kicked Member')
-.setDescription(ID : ${member.id}
-Last Message : ${member.lastMessage})
-client.channels.get('555833541812813844').send(embed)
-});
+
+    
+
+
+
+
+
+
 
 
 
