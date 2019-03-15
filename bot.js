@@ -1096,7 +1096,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'السلام عليكم') {
-    msg.reply('وعليكم السلام منور السيرفر♥');
+    msg.reply('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBF9dwnCZ_6X2fMf2XaUBIvpCEklIh8xywEvHVvGZD61DL0PEfوعليكم السلام منور السيرفر♥');
   }
 });
 
