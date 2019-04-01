@@ -1100,10 +1100,7 @@ client.on('message', msg => {
   }
 });
 
-
-
-
-var BOxox = "?"   const BOow = ["476088952726749188"]; if (message.content.startsWith(BOxox + '?ownerbot')) {       if(!message.channel.guild) return message.reply(' ');     if(!message.channel.guild) return; if( BOow.some(word => message.author.id.includes(word)) ) {    return message.channel.sendMessage("crown انت صاحب البوت ") } else {    message.reply("no_entry_sign انت لسا صاحب البوت");   } } }); 
+													
                     
 
 
